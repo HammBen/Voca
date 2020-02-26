@@ -10,6 +10,12 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .nav--links {
+    display: none;
+  }
+}
+
 @media (max-width: 1439px) {
   h1.heading,
   .introduction,
@@ -34,6 +40,14 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .contact--location--card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1px;
+        -ms-flex: 1px;
+            flex: 1px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -45,6 +59,23 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .nav--links {
+    position: absolute;
+    right: 0px;
+  }
+  .nav--links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #49590F;
+  }
+  .nav--links ul li {
+    list-style: none;
+    margin-right: 3.5vw;
+  }
+  .nav--menu svg {
+    display: none;
   }
 }
 
@@ -169,10 +200,6 @@ main .main--section header .logo .logo--name {
   color: #49590F;
 }
 
-main .main--section header .nav--links {
-  display: none;
-}
-
 main .main--section header .nav--menu svg {
   width: 29.45px;
   fill: #A65221;
@@ -210,6 +237,8 @@ main .main--section .left-aligned-content .brand--button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0px 18px 29px -4px #a65221;
+          box-shadow: 0px 18px 29px -4px #a65221;
 }
 
 main .main--section .left-aligned-content .brand--button button {
@@ -222,6 +251,12 @@ main .main--section .left-aligned-content .brand--button button {
   color: #A65221;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  outline: none;
+}
+
+main .main--section .left-aligned-content .brand--button button:hover {
+  background-color: #49590F;
+  color: #F2E5A2;
 }
 
 main .main--section .left-aligned-content .brand--button span.brand--button--logo {
@@ -385,7 +420,6 @@ main .nutrition--section .avomainimage {
 }
 
 .kitchen-section .card--control {
-  border: 1px solid red;
   margin: 0 auto;
   width: 100%;
   max-width: 1625px;
@@ -416,7 +450,13 @@ main .nutrition--section .avomainimage {
   height: 324px;
   background-color: #F2E5A2;
   border-radius: 40px;
-  border: 1px solid red;
+  -webkit-box-shadow: 0px 18px 29px -4px rgba(0, 0, 0, 0.253);
+          box-shadow: 0px 18px 29px -4px rgba(0, 0, 0, 0.253);
+}
+
+.kitchen-section .card--control .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .kitchen-section .card--control .card .top--area {
@@ -441,14 +481,16 @@ main .nutrition--section .avomainimage {
 }
 
 .kitchen-section .card--control .card .food--image {
-  width: 198px;
+  width: calc(13vw*4);
   max-width: 216px;
 }
 
 .kitchen-section .card--control .card .brand--button {
-  max-width: 345px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  max-width: 345px;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -465,6 +507,12 @@ main .nutrition--section .avomainimage {
   font-weight: bold;
   color: #A65221;
   letter-spacing: 0.13rem;
+  outline: none;
+}
+
+.kitchen-section .card--control .card .brand--button button:hover {
+  background-color: #49590F;
+  color: #F2E5A2;
 }
 
 .kitchen-section .card--control .card .brand--button span.brand--button--logo {
@@ -512,7 +560,11 @@ main .nutrition--section .avomainimage {
 
 .contact-section .contact--location--card {
   width: 100%;
+  max-width: 1640px;
   margin-bottom: 130px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .contact-section .contact--location--card .contact--card {
@@ -521,6 +573,8 @@ main .nutrition--section .avomainimage {
   height: 123px;
   margin: 0 auto;
   padding: 30px 15px;
+  -webkit-box-shadow: 0px 18px 29px -4px rgba(0, 0, 0, 0.233);
+          box-shadow: 0px 18px 29px -4px rgba(0, 0, 0, 0.233);
 }
 
 .contact-section .contact--location--card .contact--card .content {
@@ -563,6 +617,9 @@ main .nutrition--section .avomainimage {
   max-width: 820px;
   height: 123px;
   margin: 0 auto;
+  background-color: #C1D96A;
+  -webkit-box-shadow: 0px 18px 29px -4px rgba(0, 0, 0, 0.233);
+          box-shadow: 0px 18px 29px -4px rgba(0, 0, 0, 0.233);
   padding: 30px 15px;
 }
 

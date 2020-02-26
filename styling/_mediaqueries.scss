@@ -25,6 +25,12 @@
         text-align: center;
     }
 }
+
+@media (max-width: 1023px) {
+    .nav--links {
+        display: none;
+    }
+}
  
 @media (max-width: 1439px) {
     h1.heading, 
@@ -73,6 +79,11 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .contact--location--card {
+        display: flex;
+        flex: 1px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -80,6 +91,28 @@
         display: flex;
         max-height: 358px;
         align-items: center;
+    }
+
+    .nav--links {
+        position: absolute;
+        right: 0px;
+        // border: 1px solid red;
+
+        ul {
+            display: flex;
+            color: $secondaryColorDark;
+            
+            li {
+                list-style: none;
+                margin-right: 3.5vw;
+            }
+        }
+    }
+
+    .nav--menu {
+        svg {
+            display: none;
+        }
     }
 }
 
