@@ -1,0 +1,145 @@
+//max-width queries
+
+@media (max-width: 320px) {
+    
+}
+
+@media (max-width: 375px) {
+    
+}
+
+@media (max-width: 425px) {
+    
+}
+
+@media (max-width: 768px) {
+    h1.heading {
+        padding-top: 30px;
+    }
+
+    .introduction {
+        padding: 0 7px;
+    }
+
+    .avocado--education {
+        text-align: center;
+    }
+}
+ 
+@media (max-width: 1439px) {
+    h1.heading, 
+    .introduction, 
+    .brand--button {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1440px) {
+    .main--section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 2560px) {
+    
+}
+
+
+
+
+
+
+
+
+
+//min-width queries
+
+@media (min-width: 320px) {
+    
+}
+
+@media (min-width: 375px) {
+    
+}
+
+@media (min-width: 425px) {
+    
+}
+
+@media (min-width: 768px) {
+    .card--control {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px) {
+    .seasons--info {
+        display: flex;
+        max-height: 358px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main--section {
+        width: 70%;
+    }
+
+    .left-aligned-content {
+        // border: 1px solid red;
+        max-width: 682px;
+        margin-left: 139px;
+        margin-top: 156px !important;
+    }
+
+    h1.heading {
+        // border: 1px solid red;
+        // font-size: 60px;
+        line-height: 75px;
+    }
+
+    .introduction {
+        // border: 1px solid red;
+        height: 172px;
+        font-size: 20px;
+    }
+
+    .nutrition--section {
+        width: 30%;
+        min-height: 100vh;
+        background-color: $secondaryColor;
+    }
+
+    .avomainimage {
+        display: block !important;
+        // border: 1px solid red;
+        margin-top: 136px;
+    }
+
+    .social--media {
+        // border: 1px solid red;
+        flex-direction: column;
+        min-height: 147px;
+        margin-left: 50px !important;
+    }
+
+    .season--months-info > p {
+        font-size: 18px;
+    }
+
+    .avocado--education {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 1364px;
+        text-align: left;
+    }
+
+    
+}
+
+@media (min-width: 2560px) {
+    
+}
