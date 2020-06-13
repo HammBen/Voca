@@ -624,6 +624,7 @@ main .nutrition--section .avomainimage {
 }
 
 .contact-section .contact--location--card .location--card .content {
+  width: 284px;
   width: calc(4.9vw%2);
   display: -webkit-box;
   display: -ms-flexbox;
