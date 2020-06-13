@@ -136,6 +136,7 @@ html, body {
   height: 100vh;
   width: 100%;
   color: #86905F;
+  scroll-behavior: smooth;
   font-family: 'Open Sans', sans-serif;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -154,7 +155,7 @@ main {
 }
 
 main .main--section header {
-  background-color: initial;
+  background-color: #F2E5A2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +199,19 @@ main .main--section header .logo .logo--name {
   font-size: 17px;
   font-family: 'Lemon', cursive;
   color: #49590F;
+}
+
+main .main--section header .nav--links ul > li {
+  cursor: pointer;
+}
+
+main .main--section header .nav--links ul > li a {
+  text-decoration: none;
+  color: #49590F;
+}
+
+main .main--section header .nav--links ul > li a:hover {
+  color: #A65221;
 }
 
 main .main--section header .nav--menu svg {
@@ -252,6 +266,7 @@ main .main--section .left-aligned-content .brand--button button {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   outline: none;
+  cursor: pointer;
 }
 
 main .main--section .left-aligned-content .brand--button button:hover {
@@ -305,6 +320,12 @@ main .nutrition--section .avomainimage {
   margin-left: -12.5vw;
 }
 
+.avocado-season {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .avocado-season .first--image {
   display: none;
 }
@@ -341,7 +362,6 @@ main .nutrition--section .avomainimage {
   max-width: 88vw;
   max-width: 1364px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .avocado-season .season--main .seasons--info .season--months-info {
@@ -624,7 +644,6 @@ main .nutrition--section .avomainimage {
 }
 
 .contact-section .contact--location--card .location--card .content {
-  width: 284px;
   width: calc(4.9vw%2);
   display: -webkit-box;
   display: -ms-flexbox;
